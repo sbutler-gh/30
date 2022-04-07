@@ -54,17 +54,20 @@
     
     </script>
 
-    <main class="p-4">
+    <main class="p-4 bg-gray-50">
     
       <div class="flex">
         <div class="example">
-          <img src="../static/food.png">
+          <img src="./food2.png">
+          <!-- <img src="https://i.imgur.com/EvbGqsI.png"> -->
         </div>
         <div class="example">
-          <img src="../static/mobility.png">
+          <img src="./mobility5.png">
+          <!-- <img src="https://i.imgur.com/jLUTWdT.png"> -->
         </div>
         <div class="example">
-          <img src="../static/energy.png">
+          <img src="./energy.png">
+          <!-- <img src="https://i.imgur.com/TuXHu8V.png"> -->
         </div>
       </div>
 
@@ -72,26 +75,34 @@
 
     <h1>Let's start living them, together.</h1>
 
-    <h1>Easy.  Accessible.  Today.  Together.</h1>
+    <h1>Easy.  Accessible.  Today.  Community.</h1>
 
-    <div class="flex">
+    <div class="flex-row md:flex gap-6">
       <div class="example">
         <h3>Grow our own food</h3>
-        <img src="../static/food.png">
-        <p>Just seeds and water.  (No gardening required.)</p>
-        <p>The easiest, cheapest, most nutritious food you can get.</p>
+        <img src="./food2.png">
+        <!-- <img src="https://i.imgur.com/EvbGqsI.png"> -->
+        <p>... in a jar!  Add seeds.  Add water.  Rinse twice daily.  Enjoy sprouts.</p>
+        <p>The <strong>easiest, cheapest, most nutritious food</strong> you can get.</p>
+        <p><em>No soil, pots, or gardening required!</em></p>
       </div>
       <div class="example">
         <h3>Bikes and Mobility</h3>
-        <img src="../static/mobility.png">
+        <img src="./mobility5.png" class="h-48 m-auto">
+        <!-- <p>To the grocery store.  With the kids.</p>
+        <p>Fun commute.  Feel the wind.</p> -->
+
+        <!-- <img src="https://i.imgur.com/jLUTWdT.png"> -->
       </div>
       <div class="example">
         <h3>Sun Power and Circadian Rhythms</h3>
-        <img src="../static/energy.png">
-        <p>Power your laptop with a single solar panel — all you need.</p>
+        <img src="./energy.png">
+        <!-- <img src="https://i.imgur.com/TuXHu8V.png"> -->
+        <p>A solar panel for your laptop — <strong>all you need.</strong></p>
+        <!-- <p>Power your laptop with a single solar panel — all you need.</p> -->
         <p>Turn down the thermostat, put on pajamas.</p>
         <!-- Hot watter bottle -->
-        <p>Heat people, not spaces.</p>
+        <!-- <p>Heat people, not spaces.</p> -->
         <p>And rediscover darkness as the sun falls and life goes quiet.</p>
         <!-- Reading a book, stars -->
       </div>

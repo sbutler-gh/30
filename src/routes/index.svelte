@@ -78,6 +78,24 @@
     }
     
     </script>
+    <svelte:head>
+    <title>Living New Worlds</title>
+    <meta name="description" content="Let's start living them, together."/>
+    
+    <meta property="og:title" content="30 months to make new worlds" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.rebrand.ly/30-months" />
+    <meta property="og:description" content="Let's start living them, together — with change like this:"/>
+    <meta property="og:image" content="https://i.imgur.com/EvbGqsI.png">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="rebrand.ly">
+    <meta property="twitter:url" content="https://www.rebrand.ly/30-months">
+    <meta name="twitter:title" content="30 months to make new worlds">
+    <meta name="twitter:description" content="Let's start living them, together — with change like this:">
+    <meta name="twitter:image" content="https://i.imgur.com/EvbGqsI.png">
+    
+    </svelte:head>
 
     <main class="p-4 bg-gray-50">
     
@@ -123,7 +141,7 @@
         <h3>Sun Power and Circadian Rhythms</h3>
         <img src="./energy.png">
         <!-- <img src="https://i.imgur.com/TuXHu8V.png"> -->
-        <p>A solar panel for your laptop — <strong>all you need.</strong></p>
+        <p>A solar panel for work-at-home — <strong>all you need.</strong></p>
         <!-- <p>Power your laptop with a single solar panel — all you need.</p> -->
         <p>Turn down the thermostat, put on pajamas.</p>
         <!-- Hot watter bottle -->
@@ -133,9 +151,9 @@
       </div>
   </div>
 
-  <h3>We're not selling anything.  We're organizing ourselves, to start living the change together.</h3>
+  <h3>We're organizing ourselves, to start living the change together.</h3>
 
-  <h3>Starting with change like this:  Easy.  Simple.  Today.  Together.</h3>
+  <h3>Starting with change like this.  Easy.  Accessible.  Together.  Today.</h3>
     
   <h2>Are you ready?</h2>
   <p class="text-center">(This isn't signing up for a mailing list.  This is joining a cooperative movement.)</p>

@@ -9,15 +9,16 @@
     "prepare": "svelte-kit sync"
   },
   "devDependencies": {
+    "@supabase/supabase-js": "^1.8.0",
     "@sveltejs/adapter-auto": "next",
     "@sveltejs/kit": "next",
-    "svelte": "^3.44.0",
+    "@tailwindcss/forms": "^0.5.0",
+    "autoprefixer": "^10.4.2",
     "postcss": "^8.4.5",
     "postcss-load-config": "^3.1.1",
+    "svelte": "^3.44.0",
     "svelte-preprocess": "^4.10.1",
-    "autoprefixer": "^10.4.2",
-    "tailwindcss": "^3.0.12",
-    "@supabase/supabase-js": "^1.8.0"
+    "tailwindcss": "^3.0.12"
   },
   "type": "module"
 }

@@ -10,6 +10,7 @@
     let postal;
     let country;
     let coordinates;
+    let success = false;
 
     onMount(async () => {
     
@@ -37,6 +38,8 @@
     let data = await response.json();
 
     console.log(data);
+
+    success = true;
 
     }
 
@@ -167,6 +170,7 @@
 
     <!-- <a href="https://example.com">test link</a> -->
 
+    {#if !success}
     <form on:submit|preventDefault={signUp} class="border rounded p-4 mt-8 max-w-md m-auto">
         <div class="grid grid-cols-1 gap-6">
           <label class="block">
@@ -214,6 +218,9 @@
           <button type="submit">Submit</button>
         </div>
       </form>
+      {:else}
+      <p class="text-green-500">Success! <br><br> This site is in progress, but there will be more information about next steps and coordinating together soon!  <br><br> In the meantime, feel free to contact hello@sambutler.us or on Twitter @sambutlerUS if you want to connect.</p>
+      {/if}
 
       </main>
 

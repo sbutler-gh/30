@@ -39,6 +39,10 @@
     label > span {
         @apply text-gray-700 text-sm;
     }
+
+    .example {
+        @apply w-1/3;
+    }
 }
 
 /** * Unreset CSS * * Copyright (C) 2016 Kite (ixkaito@gmail.com) * License MIT * Version 1.0.0 * * Unreset CSS restores browsers' default element styles which are reset by * Eric Meyer's Reset CSS, YUI 3 Reset CSS, HTML5 Reset Stylesheet of HTML5 * Doctor, or Tim Murtaugh's HTML5 Reset. */

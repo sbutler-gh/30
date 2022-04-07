@@ -96,11 +96,11 @@
         </div>
       </div>
 
-    <h1>We have 30 months to make new worlds, according to <a href="https://example.com">the latest IPCC reports.</a></h1>
+    <h1>We have 30 months to make new worlds, according to <a href="https://www.drilledpodcast.com/debunking-demand-ipcc-mitigation-report-part-1/">the latest IPCC reports.</a></h1>
 
     <h1>Let's start living them, together.</h1>
 
-    <h1>Easy.  Accessible.  Today.  Community.</h1>
+    <!-- <h1>Easy.  Accessible.  Today.  Community.</h1> -->
 
     <div class="flex-row md:flex gap-6">
       <div class="example">
@@ -134,9 +134,11 @@
   </div>
 
   <h3>We're not selling anything.  We're organizing ourselves, to start living the change together.</h3>
+
+  <h3>Starting with change like this:  Easy.  Simple.  Today.  Together.</h3>
     
   <h2>Are you ready?</h2>
-  <p class="text-center">(This isn't signing up for a mailing list.  This is joining a cooperative.)</p>
+  <p class="text-center">(This isn't signing up for a mailing list.  This is joining a cooperative movement.)</p>
     <!-- <h3>We're not selling this to you.  We're organizing ourselves to make this happen together.</h3> -->
     
     <!-- {address}
@@ -178,7 +180,7 @@
           </label>
           <label class="block">
             <span class="text-gray-700">Postal Code</span>
-            <input name="postal" class="mt-1 block w-full" bind:value={postal}>
+            <input name="postal" type="text" class="mt-1 block w-full" bind:value={postal}>
           </label>
           <div class="block">
             <div class="mt-2">

@@ -117,7 +117,7 @@
         </div>
       </div>
 
-    <h1>We have 30 months to make new worlds, according to <a href="https://www.drilledpodcast.com/debunking-demand-ipcc-mitigation-report-part-1/">the latest IPCC reports.</a></h1>
+    <h1>We have 30 months to make new worlds, according to <a href="https://www.drilledpodcast.com/debunking-demand-ipcc-mitigation-report-part-1/" target="_blank">the latest IPCC reports.</a></h1>
 
     <h1>Let's start living them, together.</h1>
 

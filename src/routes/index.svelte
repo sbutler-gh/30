@@ -56,11 +56,17 @@
 
     <main class="p-4">
     
-    <div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
+      <div class="flex">
+        <div class="example">
+          <img src="../static/food.png">
+        </div>
+        <div class="example">
+          <img src="../static/mobility.png">
+        </div>
+        <div class="example">
+          <img src="../static/energy.png">
+        </div>
+      </div>
 
     <h1>We have 30 months to make new worlds, according to <a href="https://example.com">the latest IPCC reports.</a></h1>
 
@@ -71,14 +77,17 @@
     <div class="flex">
       <div class="example">
         <h3>Grow our own food</h3>
+        <img src="../static/food.png">
         <p>Just seeds and water.  (No gardening required.)</p>
         <p>The easiest, cheapest, most nutritious food you can get.</p>
       </div>
       <div class="example">
         <h3>Bikes and Mobility</h3>
+        <img src="../static/mobility.png">
       </div>
       <div class="example">
         <h3>Sun Power and Circadian Rhythms</h3>
+        <img src="../static/energy.png">
         <p>Power your laptop with a single solar panel — all you need.</p>
         <p>Turn down the thermostat, put on pajamas.</p>
         <!-- Hot watter bottle -->

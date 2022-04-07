@@ -16,6 +16,31 @@
     ipToCoordinates();
 
     });
+
+    async function signUp(e) {
+
+    var formData = new FormData(e.target);
+
+    formData.append('coordinates', JSON.stringify(coordinates));
+
+    formData.append('id', crypto.randomUUID());
+
+    console.log('submitting');
+
+    const response = await fetch(`signup`, {
+    method: "post",
+    body: formData
+    })
+
+    if (response) {
+      
+    let data = await response.json();
+
+    console.log(data);
+
+    }
+
+    }
     
     
     async function ipToCoordinates() {
@@ -122,51 +147,51 @@
 
     <!-- <a href="https://example.com">test link</a> -->
 
-    <form class="border rounded p-4 mt-8 max-w-md m-auto">
+    <form on:submit|preventDefault={signUp} class="border rounded p-4 mt-8 max-w-md m-auto">
         <div class="grid grid-cols-1 gap-6">
           <label class="block">
-            <span class="text-gray-700">Name</span>
-            <input type="text" class="mt-1 block w-full" placeholder="">
+            <span  class="text-gray-700">Name</span>
+            <input name="name" type="text" class="mt-1 block w-full" placeholder="">
           </label>
           <label class="block">
             <span class="text-gray-700">Email</span>
-            <input type="email" class="mt-1 block w-full" placeholder="john@example.com">
+            <input name="email" type="email" class="mt-1 block w-full" placeholder="john@example.com">
           </label>
           <div class="personal grid grid-cols-1 gap-6">
-          <strong>More Information — Optional</strong>
-          <p>We'll use this information to who see who is around us and start coordinating together.</p>
+          <strong class="w-full">More Information — Optional</strong>
+          <p>We'll use this information to see who's around and start coordinating together (if you share it).</p>
           <label class="block">
             <span class="text-gray-700">Phone</span>
-            <input type="tel" class="mt-1 block w-full" placeholder="">
+            <input name="phone" type="tel" class="mt-1 block w-full" placeholder="">
           </label>
           <label class="block">
             <span class="text-gray-700">City</span>
-            <input type="text" class="mt-1 block w-full" >
+            <input name="city" type="text" class="mt-1 block w-full" >
           </label>
           <label class="block">
             <span class="text-gray-700">State/Province</span>
-            <input type="text" class="mt-1 block w-full" >
+            <input name="state" type="text" class="mt-1 block w-full" >
           </label>
           <label class="block">
             <span class="text-gray-700">Country</span>
-            <input type="text" class="mt-1 block w-full" bind:value={country}>
+            <input name="country" type="text" class="mt-1 block w-full" bind:value={country}>
           </label>
           <label class="block">
             <span class="text-gray-700">Postal Code</span>
-            <input type="text" class="mt-1 block w-full" bind:value={postal}>
+            <input name="postal" class="mt-1 block w-full" bind:value={postal}>
           </label>
           <div class="block">
             <div class="mt-2">
               <div>
                 <label class="inline-flex items-center">
-                  <input type="checkbox" checked="">
-                  <span class="ml-2">I pledge to join this movement in solidarity.  If I seek advantage over others, or ignore responsibilities to others, I understand I am hurting peers and the worlds we're trying to create.</span>
+                  <input name="pledge" type="checkbox" checked="">
+                  <span class="ml-2">I pledge to join this movement in solidarity.  If I seek advantage over others, or ignore responsibilities to others, I understand I am hurting the worlds we're trying to create.</span>
                 </label>
               </div>
             </div>
           </div>
           </div>
-          <button type="button">Submit</button>
+          <button type="submit">Submit</button>
         </div>
       </form>
 

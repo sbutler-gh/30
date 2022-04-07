@@ -10,7 +10,7 @@
     }
 
     button {
-        @apply border ml-auto block bg-gray-100 hover:bg-gray-50 border-black p-2 rounded mt-2 !important;
+        @apply border ml-auto block bg-blue-100 hover:bg-blue-50 border-black p-2 rounded mt-2 !important;
     }
 
     a {

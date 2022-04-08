@@ -20,6 +20,13 @@
 
     async function signUp(e) {
 
+    console.log(e);
+
+    console.log(e.submitter);
+
+    e.submitter.disabled = true;
+    e.submitter.style.background = "gray !important";
+
     var formData = new FormData(e.target);
 
     formData.append('coordinates', JSON.stringify(coordinates));
@@ -158,8 +165,9 @@
 
   <h3>Starting with change like this.  Easy.  Accessible.  Together.  Today.</h3>
     
+  {#if !success}
   <h2>Are you ready?</h2>
-  <p class="text-center">(This isn't signing up for a mailing list.  This is joining a cooperative movement.)</p>
+  <p class="text-center">(This isn't signing up for a mailing list.  This is joining a <strong>cooperative movement.</strong>    <a class="" href="" on:click={function() {success = true}}>Already joined?</a>)</p>
     <!-- <h3>We're not selling this to you.  We're organizing ourselves to make this happen together.</h3> -->
     
     <!-- {address}
@@ -169,8 +177,6 @@
     {JSON.stringify(coordinates)} -->
 
     <!-- <a href="https://example.com">test link</a> -->
-
-    {#if !success}
     <form on:submit|preventDefault={signUp} class="border rounded p-4 mt-8 max-w-md m-auto">
         <div class="grid grid-cols-1 gap-6">
           <label class="block">
@@ -219,7 +225,41 @@
         </div>
       </form>
       {:else}
-      <p class="text-green-500">Success! <br><br> This site is in progress, but there will be more information about next steps and coordinating together soon!  <br><br> In the meantime, feel free to contact hello@sambutler.us or on Twitter @sambutlerUS if you want to connect.</p>
+      <section>
+        <p class="text-green-600 text-xl text-center">Success!</p>
+        <h3>Now start living the change.  Here's what you need:</h3>
+        <div class="flex-row md:flex gap-6">
+          <div class="example">
+            <h4>Grow your food</h4>
+            <ul>
+              <li>Wide-mouth <a href="https://www.amazon.com/Ball-Wide-Mouth-Gallon-Bands/dp/B0041SWYFQ/ref=sr_1_15?keywords=wide%2Bmouth%2Bmason%2Bjars&qid=1649423732&sr=8-15&th=1">mason jars</a>. <em>$7/jar.</em></li>
+              <li><a href="https://www.amazon.com/Stainless-Sprouting-Strainer-Screen-Canning/dp/B07KJYBV24/ref=sr_1_5?crid=28V8UKATFTGIP&keywords=wide+mouth+mason+jar+screen&qid=1646675599&s=home-garden&sprefix=widemouth+mason+jar+screen%2Cgarden%2C169&sr=1-5">Sprouting lids</a>. <em>$1.50/lid.</em></li>
+              <li><a href="https://sprouting.com/product/cabbage-red/">Organic bulk seeds</a>. <em>$0.50 of seeds grows into 1lb of sprouts.</em></li>
+            </ul>
+            <!-- <em>A set of 2 jars + lids costs $15.  Buying in bulk, $0.50 of seeds grows into 1lb of sprouts.</em> -->
+          </div>
+          <div class="example">
+            <h4>Bikes + Mobility</h4>
+            <ul>
+              <li>A bus/metro/transit card in your location. <em>$130/month</em></li>
+              <li>A bike and bike lock.  <em>$300 or less.</em></li>
+              <li>Use a bike-sharing option, and never worry about your own bike. <em>$15/month</em></li>
+            </ul>
+          </div>
+          <div class="example">
+            <h4>Lower Energy, Sun Power</h4>
+            <ul>
+              <li>Turn down your thermostat to 70°F. (62°F when outside or sleeping.)</li>
+              <li>Refurbished <a href="https://gogreenmansolar.com/product-category/used-equipment/">200W+ solar panels</a>, to power your work-at-home with the sun. <em>$70 each — 3x cheaper than new.</em></li>
+              <li>Try living from the energy the sun gives you in a day.</li>
+            </ul>
+          </div>
+      </div>
+      <section class="text-center">
+        <h4>And start sharing <a href="https://rebrand.ly/30-months">https://rebrand.ly/30-months</a> with others in your community — friends, family, workplace, colleagues — to make this happen together.</h4>
+        <p>This site is in progress, but there will be more information about next steps and coordinating together soon!  In the meantime, feel free to contact <a href="mailto:hello@sambutler.us?subject=Contacting&20about&2;30&20months">hello@sambutler.us</a> or <a href="twitter.com/sambutlerUS">on Twitter</a> if you want to connect.</p>
+      </section>
+      </section>
       {/if}
 
       </main>

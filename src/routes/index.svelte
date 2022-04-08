@@ -9,7 +9,7 @@
     let region;
     let postal;
     let country;
-    let coordinates;
+    let coordinates = {"lat": "", "lng": ""};
     let success = false;
 
     onMount(async () => {
@@ -142,6 +142,8 @@
       <div class="example">
         <h3>Bikes and Mobility</h3>
         <img src="./mobility5.png" class="h-48 m-auto">
+        <p>Forget your car.  Forget the stress.  (Forget gas stations!)</p>
+        <p>Ride, hop, bus, jump, move your way around.</p>
         <!-- <p>To the grocery store.  With the kids.</p>
         <p>Fun commute.  Feel the wind.</p> -->
 
@@ -243,7 +245,7 @@
             <ul>
               <li>A bus/metro/transit card in your location. <em>$130/month</em></li>
               <li>A bike and bike lock.  <em>$300 or less.</em></li>
-              <li>Use a bike-sharing option, and never worry about your own bike. <em>$15/month</em></li>
+              <li>Use a <a href="https://bikesharemap.com/#/8/{coordinates["lng"]}/{coordinates["lat"]}">local bike-share</a>, and never worry about your own bike. <em>$15/month</em></li>
             </ul>
           </div>
           <div class="example">

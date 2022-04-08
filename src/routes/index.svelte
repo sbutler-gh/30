@@ -217,7 +217,7 @@
               <div>
                 <label class="inline-flex items-center">
                   <input name="pledge" type="checkbox" checked="">
-                  <span class="ml-2">I pledge to join this movement in solidarity.  If I seek advantage over others, or ignore responsibilities to others, I understand I am hurting the worlds we're trying to create.</span>
+                  <span class="ml-2">I pledge to join this movement in solidarity.  If I seek advantage over others, or ignore responsibilities, I understand I am hurting the worlds we're trying to create.</span>
                 </label>
               </div>
             </div>

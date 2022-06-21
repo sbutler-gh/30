@@ -6,6 +6,13 @@ import adapter from "@sveltejs/adapter-cloudflare";
 const config = {
   kit: {
     adapter: adapter(),
+    vite: {
+      server: {
+      fs: {
+        allow: ['functions']
+      }
+    }
+    }
     // target: '#svelte'
   },
 
